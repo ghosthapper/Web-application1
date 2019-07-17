@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Student_from</title>
+        <style>
+            .H1{
+                padding-top: 80px;
+                padding-left: 200px;
+                padding-right: 150px;
+            }   
+            input[type=str1] {
+                width: 50%;
+                padding: 6px;
+                margin: 20px 150px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            input[type=str2]{
+                width: 50%;
+                padding: 6px;
+                margin: 20px 120px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            input[type=str3]{
+                width: 50%;
+                padding: 6px;
+                margin: 20px 90px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            button[type=submit]{
+                width: 8%;
+                height: 30px;
+                margin: 30px 50px;
+                text-align: center;
+            }
+            button[type=Edit]{
+                width: 8%;
+                height: 30px;
+                margin: 30px 50px;
+                text-align: center;
+            }
+            button[type=delete]{
+                width: 8%;
+                height: 30px;
+                margin: 30px 50px;
+                text-align: center;
+            }
+            button:hover {
+                opacity: 0.8;
+                }
+        </style>
+    </head>
+    <body bgcolor=9A9695>
+        <div class="H1">
+                <form  method="POST" >
+                    {% csrf_token %}
+                    <B>STUDENTS ID:</B>
+                    <input type="str1" placeholder="Enter student-id" name="Students_id">
+                    
+                    <br>
+                    <B>STUDENTS NAME:</B>
+                    <input type="str2" placeholder="Enter student name" name="Students_name" >
+                    
+                    <br>
+                    <B>STUDENTS EMAIL-ID:</B>
+                    <input type="str3" placeholder="Enter student email-id" name="email" >
+
+                    
+                  <button type="submit">SUBMIT</button>
+                  </form>
+        </div>
+    </body>
+</html>
